@@ -1,0 +1,41 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 5px solid #fff;
+    margin-left: 3%;
+    background: linear-gradient(45deg, white 21%, black 25%, black 50%, black 76%, white 78%);
+
+}
+
+
+.logoText {
+    font-family: cursive;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.logoContainer {
+    border-color: #111;
+    cursor: pointer;
+}
+
+.logoContainer:hover .logoText {
+    color: black;
+}
+
+.logoContainer:hover {
+    background: linear-gradient(45deg, black 21%, white 25%, white 50%, white 76%, black 78%);
+}
+
+.logoContainer:hover {
+    border-color: white;
+    cursor: pointer;
+}
