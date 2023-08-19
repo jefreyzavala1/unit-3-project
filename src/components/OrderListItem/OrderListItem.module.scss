@@ -6,24 +6,24 @@
     margin-bottom: 3vmin;
     padding: 2vmin;
     color: var(--text-light);
-    background-color: var(--white);
+    background-color: var(--black);
     border: .2vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 2vmin;
     cursor: pointer;
-    }
-    
-    .OrderListItem > div> div:first-child {
+}
+
+.OrderListItem>div>div:first-child {
     margin-bottom: .5vmin;
-    }
-    
-    .OrderListItem.selected {
+}
+
+.OrderListItem.selected {
     border-color: var(--orange);
     border-width: .2vmin;
     cursor: default;
-    }
-    
-    .OrderListItem:not(.selected):hover {
+}
+
+.OrderListItem:not(.selected):hover {
     border-color: var(--orange);
     border-width: .2vmin;
-    }
+}

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Russo+One&display=swap');
 
 :root {
-  --white: #0a0907;
+  --black: #0a0907;
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
   --tan-3: #FBF9F6;
   --tan-4: #080608;
-  --orange: #4770d7;
+  --orange: #f1f3f9;
   --text-white: #eeeded;
   --text-dark: #615954;
 }
@@ -49,10 +49,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-ctr-ctr span:first-child {
+  padding-left: 20%;
+  padding-right: 5%;
 }
 
 .flex-j-end {

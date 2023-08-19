@@ -3,10 +3,12 @@ import styles from './LineItem.module.scss';
 export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
 return (
   <div className={styles.LineItem}>
-    <div className="flex-ctr-ctr">{lineItem.item.emoji}</div>
+    <div className="flex-ctr-ctr">
+	<img src={lineItem.item.image} alt={lineItem.item.name} className={styles.image}/>
+	</div>
     <div className="flex-ctr-ctr flex-col">
       <span className="align-ctr">{lineItem.item.name}</span>
-      <span>{lineItem.item.price.toFixed(2)}</span>
+      <span>{`Size: ${lineItem.item.size}`}</span>
     </div>
     <div className={styles.qty} style={{ justifyContent: isPaid && 'center' }}>
       {!isPaid &&

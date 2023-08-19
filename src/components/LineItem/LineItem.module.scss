@@ -4,29 +4,38 @@
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
     color: var(--text-light);
-    background-color: var(--white);
+    background-color: var(--black);
     border-top: .1vmin solid var(--tan-3);
-    font-size: 1.5vw;
-    }
-    
-    .LineItem:last-child {
+    font-size: 1.2vw;
+}
+
+.LineItem:last-child {
     border-bottom: .1vmin solid var(--tan-3);
-    }
-    
-    .LineItem .qty {
+}
+
+.LineItem .qty {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.3vw;
-    }
-    
-    .LineItem .extPrice {
+}
+
+.LineItem .extPrice {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 1.3vw;
-    }
-    
-    .LineItem button {
+}
+
+.LineItem button {
     margin: 0;
-    }
+}
+
+.image {
+    height: 8vw;
+    width: 8vw;
+}
+
+.move {
+    margin-left: 10%;
+}
