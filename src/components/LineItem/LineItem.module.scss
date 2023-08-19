@@ -3,14 +3,14 @@
     display: grid;
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
-    color: var(--text-light);
+    color: var(--text-white);
     background-color: var(--black);
-    border-top: .1vmin solid var(--tan-3);
+    border-top: .1vmin solid var(--text-white);
     font-size: 1.2vw;
 }
 
 .LineItem:last-child {
-    border-bottom: .1vmin solid var(--tan-3);
+    border-bottom: .1vmin solid var(--text-white);
 }
 
 .LineItem .qty {
@@ -32,10 +32,6 @@
 }
 
 .image {
-    height: 8vw;
-    width: 8vw;
-}
-
-.move {
-    margin-left: 10%;
+    height: 4vw;
+    width: 4vw;
 }

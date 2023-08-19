@@ -23,7 +23,7 @@ async function seedData() {
 		{ name: 'Nike Air Force 1 Low', image: 'https://i.imgur.com/MkUXoUt.jpg', category: categories[1], price: 110 ,size:9},
 		{ name: 'Nike Air Max 90',image: 'https://i.imgur.com/CzASUlP.jpg',category: categories[1],price: 120,size:9},
 		{ name: 'Nike Air Huarache',image: 'https://i.imgur.com/2HnecQj.jpg',category: categories[1],price: 125,size:9},
-		{ name: 'Adidas Superstar', image: 'blob:https://imgur.com/fc624113-2454-4c0f-9768-74d6562f04fe', category: categories[2], price: 100,size:9 },
+		{ name: 'Adidas Superstar', image: 'https://i.imgur.com/ZAJ4AFD.png', category: categories[2], price: 100,size:9 },
 		{ name: 'Adidas Ultra Boost', image: 'https://i.imgur.com/aWGK1ND.jpg', category: categories[2], price: 150,size:9},
 		{ name: 'Adidas NDM R1', image: 'https://i.imgur.com/7ZM0yHV.jpg', category: categories[2], price: 120,size:9 },
 		{ name: 'Puma  Suede Classic', image: 'https://i.imgur.com/oXYxy2N.jpg', category: categories[3], price: 70,size:9},

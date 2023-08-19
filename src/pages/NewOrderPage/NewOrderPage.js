@@ -8,6 +8,7 @@ import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
+import SearchItem from '../../components/SearchItem/SearchItem';
 
 export default function NewOrderPage({ user, setUser }) {
   const [menuItems, setMenuItems] = useState([]);
@@ -15,6 +16,7 @@ export default function NewOrderPage({ user, setUser }) {
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
   const navigate = useNavigate();
+  const [searchTerm ,setSearchTerm] = useState('')
 
   useEffect(function() {
     async function getItems() {
@@ -52,6 +54,9 @@ export default function NewOrderPage({ user, setUser }) {
     await ordersAPI.checkout();
     navigate('/orders');
   }
+  const categoryFilteredItems = menuItems.filter(item=>item.category.name === activeCat)
+  
+  const searchFilteredItems = menuItems.filter(item=>item.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
     <main className={styles.NewOrderPage}>
@@ -61,18 +66,21 @@ export default function NewOrderPage({ user, setUser }) {
           categories={categoriesRef.current}
           cart={setCart}
           setActiveCat={setActiveCat}
+		  setSearchTerm ={setSearchTerm}
         />
         <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <MenuList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
+        menuItems={activeCat==='All'?searchFilteredItems:categoryFilteredItems}
         handleAddToOrder={handleAddToOrder}
       />
       <OrderDetail
         order={cart}
         handleChangeQty={handleChangeQty}
         handleCheckout={handleCheckout}
+		setSearchTerm = {setSearchTerm}
+		setActiveCat={setActiveCat}
       />
     </main>
   );
