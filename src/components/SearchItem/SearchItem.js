@@ -10,7 +10,7 @@ function handleChange(evt){
 function handleSubmit(evt){
     evt.preventDefault();
     onSearch(searchTerm)
-    // setSearchTerm('')
+     setSearchTerm('')
 }
 
     return(
@@ -18,7 +18,7 @@ function handleSubmit(evt){
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='Search shoes...'value={searchTerm}
                 onChange={handleChange}></input>
-                <button type="submit">Search</button>
+                <button className={styles.btn}type="submit">Search</button>
             </form>
         </div>
     )

@@ -60,9 +60,7 @@ export default function OrderDetail({
 						</section>
 					</>
 				) : (
-					<div className={styles.hungry}>
-						Shop?
-					</div>
+					null
 				)}
 				<SearchItem onSearch={onSearch}/>
 			</div>

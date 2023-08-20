@@ -336,9 +336,7 @@ function OrderDetail(_ref) {
     disabled: !lineItems.length
   }, "CHECKOUT"), /*#__PURE__*/React.createElement("span", null, order.totalQty), /*#__PURE__*/React.createElement("span", {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].right
-  }, "$", order.orderTotal.toFixed(2)))) : /*#__PURE__*/React.createElement("div", {
-    className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hungry
-  }, "Shop?"), /*#__PURE__*/React.createElement(_SearchItem_SearchItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "$", order.orderTotal.toFixed(2)))) : null, /*#__PURE__*/React.createElement(_SearchItem_SearchItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
     onSearch: onSearch
   })));
 }
@@ -440,9 +438,8 @@ function SearchItem(_ref) {
   function handleSubmit(evt) {
     evt.preventDefault();
     onSearch(searchTerm);
-    // setSearchTerm('')
+    setSearchTerm('');
   }
-
   return /*#__PURE__*/React.createElement("div", {
     className: _SearchItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].container
   }, /*#__PURE__*/React.createElement("form", {
@@ -453,6 +450,7 @@ function SearchItem(_ref) {
     value: searchTerm,
     onChange: handleChange
   }), /*#__PURE__*/React.createElement("button", {
+    className: _SearchItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].btn,
     type: "submit"
   }, "Search")));
 }
@@ -1801,11 +1799,23 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.cDH1lwIyEO3Eb4tEsP_1 {
-  margin-top: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/components/SearchItem/SearchItem.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;AACJ","sourcesContent":[".container {\n    margin-top: 100%;\n}"],"sourceRoot":""}]);
+  margin-top: 50%;
+}
+
+.AYKhrX10dJkIZefMZsWA {
+  background: white;
+  color: black;
+  font-weight: bolder;
+}
+
+.AYKhrX10dJkIZefMZsWA:hover {
+  background-color: white;
+  color: black;
+}`, "",{"version":3,"sources":["webpack://./src/components/SearchItem/SearchItem.module.scss"],"names":[],"mappings":"AAAA;EACI,eAAA;AACJ;;AAEA;EACI,iBAAA;EACA,YAAA;EACA,mBAAA;AACJ;;AAEA;EACI,uBAAA;EACA,YAAA;AACJ","sourcesContent":[".container {\n    margin-top: 50%;\n}\n\n.btn {\n    background: white;\n    color: black;\n    font-weight: bolder;\n}\n\n.btn:hover {\n    background-color: white;\n    color: black;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"container": `cDH1lwIyEO3Eb4tEsP_1`
+	"container": `cDH1lwIyEO3Eb4tEsP_1`,
+	"btn": `AYKhrX10dJkIZefMZsWA`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
